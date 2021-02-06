@@ -62,7 +62,7 @@
           var buy_price = document.getElementById('purchase_price').value;
           var total_area = document.getElementById('area_total').value;
           var profit = (sell_price - (buy_price * total_area))/(buy_price * total_area) * 100;
-          //profit = Math.round((profit + Number.EPSILON) * 100) / 100
+          profit = Math.round((profit + Number.EPSILON) * 100) / 100
           document.getElementById('profit_margin').value = profit+"%";
         }
     </script>
